@@ -1,0 +1,196 @@
+#wp-travel-demo-collection{
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+#wp-travel-demo-collection .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+    grid-gap: 20px;
+}
+
+@media screen and (max-width: 1640px) {
+    #wp-travel-demo-collection .container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    #wp-travel-demo-collection .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+#wp-travel-demo-collection .wp-travel-demo-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#wp-travel-demo-collection .wp-travel-demo-card img{
+    width: 100%;
+}
+
+#wp-travel-demo-collection .wp-travel-demo-card .wp-travel-demo-card-details-container .wp-travel-demo-title {
+    font-weight: 500;
+}
+
+#wp-travel-demo-collection .wp-travel-demo-card .wp-travel-demo-card-details-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+}
+
+#wp-travel-demo-collection .wp-travel-demo-card .wp-travel-demo-card-btn-container {
+    display: flex;
+    gap: 15px;
+}
+
+#wp-travel-demo-collection .wp-travel-demo-card .wp-travel-demo-card-btn-container .wp-travel-demo-card-btn {
+    font-size: 13px;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 5px 10px;
+    box-shadow: none
+}
+
+#wp-travel-demo-collection .wp-travel-demo-card .wp-travel-demo-card-btn-container .wp-travel-demo-card-btn.primary {
+    background: #2E9C36;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 5px 15px;
+}
+
+#wp-travel-demo-collection .wp-travel-demo-card .wp-travel-demo-card-btn-container .wp-travel-demo-card-btn.secondary {
+    border: 1px solid #2E9C36;
+    color: #2E9C36;
+    background-color: #FFFFFF;
+}
+
+#wp-travel-demo-collection  #loader{
+    text-align: center;
+    padding: 100px;
+    display: none;
+}
+
+#import-complete{
+    display: none;
+    justify-content: center;
+    position: fixed;
+    top: 10vh;
+    right: 30vw;
+    width: 20vw;
+    padding: 20px;
+    font-size: 14px;
+    background-color: #effae9;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    gap: 8px;
+}
+
+#import-complete .wp-travel-success-text,
+#import-complete .wp-travel-success-icon {
+    color: #2E9C36;
+}
+
+#import-note {
+    padding: 10px 20px;
+    background: #f9e2bf;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #cb7b00;
+    width: fit-content;
+}
+
+.wp-travel-blocks-modal-wrapper {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+
+.wp-travel-blocks-modal {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 1px 30px 5px rgba(0,0,0,0.05);
+    padding: 30px;
+    border-radius: 5px;
+    background-color: white;
+    z-index: 20;
+    position: relative;
+}
+
+.wp-travel-blocks-modal-backdrop {
+    position: fixed;
+    backdrop-filter: blur(2px);
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+}
+
+.wp-travel-blocks-modal-icon-container {
+    font-size: 84px;
+    color: rgb(231, 173, 14);
+}
+
+.wp-travel-blocks-modal-warning-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-bottom: 10px;
+
+    .error {
+        color: red;
+    }
+}
+
+.wp-travel-blocks-modal-action-btns {
+    display: flex;
+    gap: 20px
+}
+
+.wp-travel-blocks-modal-action-btns .wp-travel-blocks-modal-action-btn {
+    padding: 7px 15px;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.25s ease-in-out all
+}
+
+.wp-travel-blocks-modal-action-btns .wp-travel-blocks-modal-action-btn.primary {
+    background-color: #2E9C36;
+    color: white;
+    border: none;
+}
+
+.wp-travel-blocks-modal-action-btns .wp-travel-blocks-modal-action-btn.primary:hover {
+    background-color: #1b8122;
+}
+
+.wp-travel-blocks-modal-action-btns .wp-travel-blocks-modal-action-btn.secondary {
+    background-color: transparent;
+    color: #2E9C36;
+    border: 1px solid #2E9C36;
+}
+
+.wp-travel-blocks-modal-action-btns .wp-travel-blocks-modal-action-btn.secondary:hover {
+    background-color: rgba(0,0,0,0.03);
+    backdrop-filter: blur(2px);
+    color: #2E9C36;
+    border: 1px solid #2E9C36;
+    border-radius: 5px;
+}

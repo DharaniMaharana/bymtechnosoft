@@ -1,0 +1,98 @@
+/*!******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/trip-departure/style.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+#wptravel-trip-departure-block .departure-title {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+#wptravel-trip-departure-block .date span {
+  font-weight: 500;
+}
+
+#wptravel-trip-departure-block .date-list {
+  margin-bottom: 10px;
+}
+
+.wptravel-blocks.trip-fixed-departure .fixed-date-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.wptravel-blocks.trip-fixed-departure .fixed-date-dropdown .dropbtn {
+  color: #555;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.wptravel-blocks.trip-fixed-departure .fixed-date-dropdown .dropbtn::after {
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 5px;
+  color: #555;
+  transition: all 0.2s ease;
+  transform: rotate(-90deg);
+}
+.wptravel-blocks.trip-fixed-departure .fixed-date-dropdown .dropdown-content {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  background-color: #FFFFFF;
+  min-width: 200px;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+  transition: all 0.2s ease-in-out;
+}
+.wptravel-blocks.trip-fixed-departure .fixed-date-dropdown .dropdown-content .dropdown-list {
+  color: #555;
+  padding: 12px 16px;
+  font-weight: 400 !important;
+  position: relative;
+  text-decoration: none;
+  display: block;
+  transition: all 0.2s ease;
+  z-index: 1;
+  cursor: pointer;
+  margin-left: 0;
+}
+.wptravel-blocks.trip-fixed-departure .fixed-date-dropdown .dropdown-content .dropdown-list:before {
+  content: none;
+  background: #838383;
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
+}
+.wptravel-blocks.trip-fixed-departure .fixed-date-dropdown .dropdown-content .dropdown-list:nth-child(odd) {
+  border-right: 1px solid #ccc;
+}
+.wptravel-blocks.trip-fixed-departure .fixed-date-dropdown .dropdown-content .dropdown-list:hover {
+  background: #EEE;
+  color: #282828;
+  transition: all 0.3s ease;
+}
+.wptravel-blocks.trip-fixed-departure .fixed-date-dropdown:hover .dropbtn::after {
+  transform: rotate(0deg);
+}
+.wptravel-blocks.trip-fixed-departure .fixed-date-dropdown:hover .dropdown-content {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+.wptravel-blocks.trip-fixed-departure .fixed-date-dropdown:hover .dropdown-content .dropdown-list:hover::before {
+  transition: all 0.3s ease;
+  content: none;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

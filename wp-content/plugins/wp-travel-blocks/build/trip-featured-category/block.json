@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "wptravel/trip-featured-category",
+  "version": "0.1.0",
+  "title": "Trip Featured Category",
+  "category": "wp-travel-blocks",
+  "icon": "grid-view",
+  "description": "Display the Trips Category by (Trip Type, destination, activities, keywords etc.)",
+  "attributes": {
+    "query": {
+      "type": "object",
+      "default": {
+        "numberOfItems": 3,
+        "orderBy": "title",
+        "order": "asc"
+      }
+    },
+    "tripTax": {
+      "type": "string",
+      "default": ""
+    },
+    "layout": {
+      "type": "string",
+      "default": "layout-one"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "trips-list",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

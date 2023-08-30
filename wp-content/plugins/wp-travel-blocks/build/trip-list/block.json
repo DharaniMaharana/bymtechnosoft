@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "wptravel/trips-list",
+  "version": "0.1.0",
+  "title": "Trip List",
+  "category": "wp-travel-blocks",
+  "icon": "grid-view",
+  "description": "Display the Trips as per selected taxonomies (Trip Type, destination, activities, keywords etc.)",
+  "attributes": {
+    "relatedTrip": {
+      "type": "boolean",
+      "default": false
+    },
+    "query": {
+      "type": "object",
+      "default": {
+        "numberOfItems": 3,
+        "orderBy": "title",
+        "order": "asc"
+      }
+    },
+    "saleTrip": {
+      "type": "boolean",
+      "default": false
+    },
+    "layoutType": {
+      "type": "string",
+      "default": "default-layout"
+    },
+    "cardLayout": {
+      "type": "string",
+      "default": "grid-view"
+    },
+    "featuredTrip": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "trips-list",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
